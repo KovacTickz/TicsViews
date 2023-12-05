@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Detalles-TilinSafe</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    
+                    <h2>Tilin<span class="danger">Safe</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active" style="border-radius: 15px 15px 0 0;">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Panel</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Usuarios</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analitica</h3>
+                </a>
+                <a href="report.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Reportes</h3>
+                </a>
+                <a href="config.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Ajustes</h3>
+                </a>
+                <a href="inicio.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Cerrar sesión</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Datos Analiticos</h1>
+            <!-- Analyses -->
+            <div class="analyse" style="display: block;">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Ingresos</h3>
+                            <h1>XX.XXX</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            <div class="new-users">
+                <h2>Usuarios</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <span class="material-icons-sharp" style="font-size: 6em;">
+                            person
+                        </span>
+                        <h2>Nombre-1</h2>
+                        <p>Ultima EoS</p> <!--EoS entrada o salida-->
+                    </div>
+                    <div class="user">
+                        <span class="material-icons-sharp" style="font-size: 6em;">
+                            person
+                        </span>
+                        <h2>Nombre-2</h2>
+                        <p>Ultima EoS</p> <!--EoS entrada o salida-->
+                    </div>
+                    <div class="user">
+                        <span class="material-icons-sharp" style="font-size: 6em;">
+                            person
+                        </span>
+                        <h2>Nombre-3</h2>
+                        <p>Ultima EoS</p> <!--EoS entrada o salida-->
+                    </div>
+                    <div class="user-label">
+                        <label for="btn-modal"><span class="material-icons-sharp" style="font-size: 6em;">
+                            person_add
+                        </span>
+                        <h2>Agregar</h2>
+                        <p>Nuevo Usuario</p></label>
+                    </div>    
+                        <!--Ventana Modal-->
+                        <input type="checkbox" id="btn-modal">
+                        <div class="container-modal">
+                            <div class="content-modal">
+                                <h2>Agregar Nuevo Usuario</h2>
+                                <p>Antes de agregar un usuario solicite una tarjeta o llavero de acceso necesaria.</p>
+                                <div class="form">
+                                    <label>
+                                        <input class="input" type="text" placeholder="" required="">
+                                        <span>Nombre</span>
+                                    </label>
+                                    <label>
+                                        <input class="input" type="text" placeholder="" required="">
+                                        <span>Apellido</span>
+                                    </label>
+                                    <label>
+                                        <input class="input" type="text" placeholder="" required="">
+                                        <span>ID RFID</span>
+                                    </label>
+                                    <label>
+                                        <input class="input" type="password" placeholder="" required="">
+                                        <span>Contraseña</span>
+                                    </label>
+                                </div>
+                                <div class="btn-cerrar">
+                                    <label for="btn-modal">Agregar</label>
+                                </div>
+                            </div>
+                            <label for="btn-modal" class="cerrar-modal"></label>
+                        </div>
+                        <!--Fin de Ventana Modal-->
+                </div>
+            </div>
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            <div class="recent-orders">
+                <h2>Reportes De Ingresos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Id RFID</th>
+                            <th>Hora de ingreso</th>
+                            <th>Estado</th> <!-- permitido / no permitido -->
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="report.html">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Bienvenida, <b>NombreU</b></p>
+                        <small class="text-muted">Rango</small>
+                    </div>
+                    <span class="material-icons-sharp" style="font-size: 2em;">
+                        person
+                    </span>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <span class="material-icons-sharp">
+                        home
+                    </span>
+                    <h2>Nombre-Vivienda</h2>
+                    <p>Direccion</p>  <!--Titular servicio o usuario-->
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

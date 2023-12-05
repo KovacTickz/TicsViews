@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+
+header {
+  background-color: #333; /* Color de fondo del encabezado */
+  color: #fff; /* Color del texto en el encabezado */
+  display: flex;
+  justify-content: space-between; /* Coloca los elementos en los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px 20px; /* Espaciado interno del encabezado */
+}
+
+/* Estilos para el logotipo */
+.logo img {
+  width: 150px; /* Ancho del logotipo */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none; /* Quita las viñetas de la lista */
+  padding: 0; /* Quita el espaciado interno de la lista */
+}
+
+nav ul li {
+  display: inline; /* Muestra los elementos de la lista en línea */
+  margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+nav ul li a {
+  border-radius:5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Agregado efecto de transición */
+  padding: 10px 20px; /* Agregado padding para hacer que el área de interacción sea más grande */
+}
+
+/* Cambiar color de enlace al pasar el cursor */
+nav ul li a:hover {
+  color: #8B00B4;
+  background-color: #444;
+}
+
+
+/* Estilos sing-up & log-in*/
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #8b00b4;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #8b00b4;
+}
+
+.message, 
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #8b00b4;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #8b00b4;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #8b00b4;
+}
+
+.submit:hover {
+  background-color: #630281;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Pie de Pagina */
+
+.footer-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    
+}
+
+.footer-features{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+.footer-feature {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+.footer-feature h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.footer-feature p {
+  font-size: 16px;
+  color: #666;
+}
